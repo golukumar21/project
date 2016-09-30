@@ -1,0 +1,16 @@
+<html ng-app="myApp">
+<meta charset="UTF-8">
+ <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="C:\Angular\Js\scope.js"></script>
+ </head>
+  <body>
+   <div class="navbar" ng-controller="NavController">
+    <li class="menu-item" ng-click="doSomething()">Something</li>
+   </div>
+   <div class="contentArea" ng-controller="ContentAreaController">
+    <div ng-click="doSomething()">Hello there!</div>
+   </div>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+<html ng-app="myApp">
+  <meta charset="UTF-8">
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+      <script src="C:\Angular\Js\albums.js"></script>
+      <link rel="stylesheet" type="text/css" href="C:\Angular\css\albumm.css">
+    </head>
+    <body>
+      <table ng-controller='AlbumController'>
+        <tr ng-repeat='track in album'>
+          <td>{{$index + 1}}</td>
+          <td>{{track.name}}</td>
+          <td>{{track.duration}}</td>
+        </tr>
+      </table>
+    </body>
+</html>

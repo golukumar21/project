@@ -1,0 +1,16 @@
+<html ng-app="myApp">
+  <meta charset="UTF-8">
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="C:\Angular\Js\student.js"></script>
+    </head>
+    <body ng-controller="studentListController">
+      <ul>
+        <li ng-repeat="student in students">
+        <a href='/student/view/{{student.id}}'>{{student.name}}</a>
+        </li>
+      </ul>
+      <button ng-click="insertTom()">Insert</button>
+    </body>
+</html>

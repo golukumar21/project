@@ -1,0 +1,16 @@
+<html ng-app="myApp">
+<meta charset="UTF-8">
+ <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="C:\Angular\Js\calcu.js"></script>
+ </head>
+  <body>
+   <form ng-controller="StartUpController" ng-init="startingEstimate='0'"> 
+   	Starting: <input ng-change="computeNeeded()" ng-model="startingEstimate">
+    Recommendation: {{needed}}
+    <button ng-click="requestFunding()">Fund my startup!</button>
+    <button ng-click="reset()">Reset</button>
+   </form>
+  </body>
+</html>

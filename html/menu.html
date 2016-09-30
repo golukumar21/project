@@ -1,0 +1,18 @@
+<html ng-app="myApp">
+  <meta charset="UTF-8">
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+      <script src="C:\Angular\Js\menus.js"></script>
+      <link rel="stylesheet" type="text/css" href="C:\Angular\css\menu.css">
+    </head>
+    <body>
+      <div ng-controller='DeathrayMenuController'>
+        <button ng-click='toggleMenu()'>Toggle Menu</button>
+        <ul ng-show='menuState.show'>
+          <li ng-click='stun()'>stun</li>
+          <li ng-click='disintegrate()'>Disintegrate</li>
+          <li ng-click='erase()'>Erase from history</li>
+        </ul>
+      </div>
+    </body>
+</html>
